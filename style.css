@@ -1,0 +1,391 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1516616370751-86d6bd8b0651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: 50% 60%;
+    position: relative;
+}
+#page1  #nav{
+    height: 80px;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav-prt1{
+    height: 100px;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+#nav-prt1 h4{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.679);
+}
+#nav-prt1 h4:hover{
+    border-bottom: 2px solid white;
+    color: white;
+}
+#nav button{
+    font-size: 25px;
+    padding: 5px 20px;
+    font-weight: 500;
+    background-color:rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    cursor: pointer;
+}
+#nav button:hover{
+    scale: 1.1;
+}
+#page1-content{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background: linear-gradient(transparent,black) ;
+    /* position: relative; */
+    padding: 40px 50px;
+    
+}
+#page1-content h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+#page1-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#page1-content button{
+    font-size: 25px;
+    background-color: red;
+    padding: 15px 20px;
+    border: none;
+}
+#page1-content button:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 70px;
+    margin-top: -1px;
+}
+#page2 h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+    transition: all initial 0.5s;
+}
+#page2 #box{
+    height: 60vh;
+    width: 100vw;
+    /* background-color: red; */
+    margin: 50px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 20px;
+    /* transition: all initial 0.5s; */
+}
+#page2 #box::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 60vh;
+    width: 20vw;
+    /* background: linear-gradient(white,black); */
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 60px;
+    position: relative;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+.elem:hover img{
+    scale: 1.2;
+}
+.elem h5{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.94);
+    opacity: 0;
+}
+.elem:hover h5{
+    opacity: 1;
+}
+.elem h2{
+    opacity: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    /* font-size: 20px; */
+    font-size: 30px;
+}
+.elem:hover h2{
+    opacity: 1;
+}
+#page3{
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+#page3 h1{
+    margin-top: -1px;
+    text-align: center;
+    padding: 80px ;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+#page3 #box2{
+    
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    
+    justify-content: center;
+}
+#page3 .elem-2{
+    width: 300px;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 25px;
+    margin-right: 50px;
+}
+.elem-2 h2{
+    color: orangered;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.elem-2 p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    margin-top: -1px;
+}
+#page4 #box-3{
+    height: 70vh;
+    width: 85vw;
+    background-color: #333;
+}
+#box-3 #line1{
+    margin-left: 8%;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    /* background-color: red; */
+    transition: all initial 0.2s;
+}
+#line1 h1{
+    font-size: 40px;
+}
+#line1 p{
+    font-size: 20px;
+}
+#page4 #box-3 img{
+    height:70vh;
+    width: 70vw;
+    object-fit: cover;
+    margin-left: 7vw;
+    margin-top: 7vh;
+    transition: all initial 0.2s;
+}
+
+#page5{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    margin-top: -1px;
+    transition: all initial 0.5s;
+}
+#line2{
+    margin-left: 8%;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-bottom: 100px;
+    padding: 0 90px;
+}
+#line2 h1{
+    font-size: 40px;
+}
+#line2 button{
+    font-size: 22px;
+    padding: 0 50px;
+    background-color: red;
+    border: hidden;
+}
+#box5{
+    height: 72vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.elem-5{
+    margin-right: 80px;
+    height: 72vh;
+    width: 300px;
+    /* background-color: blue; */
+}
+.elem-5 img{
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+}
+.elem-5 h2{
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+.elem-5 h3{
+    font-size: 28px;
+    color: orangered;
+}
+
+#page6{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    margin-top: -1px;
+}
+#box6{
+    height: 80vh;
+    width: 85vw;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding-left: 90px;
+    padding-top: 60px;
+}
+#box6 h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.elem-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* background-color: red; */
+    margin-bottom: 40px;
+}
+.elem-6 #read p{
+    font-size: 25px;
+    color: orangered;
+}
+.elem-6 #elem6-1 h2{
+    font-size: 35px;
+}
+.elem-6 #elem6-1 p{
+    font-size: 14px;
+}
+#p{
+    width: 550px;
+    /* background-color: blue; */
+}
+#p p{
+    font-size: 30px;
+}
+#box6 button{
+    font-size: 20px;
+    background-color: red;
+    padding: 10px 20px;
+    border: hidden;
+    font-weight: 100;
+}
+#box6 button:hover{
+    scale: 1.02;
+}
+#page7{
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    padding-left: 150px;
+}
+#box7{
+    width: 240px;
+    margin-right: 50px;
+    /* background-color: red; */
+}
+#box7 h1{
+    font-size: 30px;
+    /* margin-bottom: 20px; */
+}
+#box7 h5{
+    font-size: 15px;
+    /* margin-bottom: 20px; */
+}
+#box7 h6{
+    font-size: 15px;
+    /* margin-bottom: 20px; */
+}
+#box7 i{
+    font-size: 20px;
+}
+
+.elem-7{
+    width: 200px;
+    /* background-color: rgb(106, 24, 24); */
+    margin-right: 40px;
+}
+.elem-7 h1{
+    font-size: 30px;
+}
+.elem-7 h6{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.629);
+    line-height: 50px;
+}
+#page7 p{
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+
+}
